@@ -1,0 +1,70 @@
+<li class="nav-item">
+  <% if (title === "About Me") { %>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Assets/images/About me (6).png">
+          </div>
+          <div class="about-col-2">
+            <p>I'm Ashley Conejo Molina, an IT networking student originally from Mexico, now based in Scarborough. Armed with basic networking skills, Python programming expertise, and a focus on computer security, I'm navigating the dynamic world of technology. Join me on this exciting journey as I explore networking protocols, design robust infrastructures, and ensure cybersecurity. Let's make our mark in the tech-driven world together! 🌐🔒</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('introductory video')">Introductory Video</p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="introductory video">
+              <div id="video-container">
+                <video controls poster="A1 Pictures/video poster.png">
+                  <source src="A1 Projects/About Me.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>Python</span><br>Object Oriented Programming</li>
+                <li><span>Networking</span><br>Design of Networks using Secure CRT</li>
+                <li><span>Web Developer</span><br>Creating Web Interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018-2022</span><br>Royal Crown Academic School, Scarborough, ON</li>
+                <li><span>2022-current</span><br>University of Ontario Institute of Technology, Oshawa, ON</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% } else { %>
+    <div id="about">
+      <div class="container">
+        <!-- ... Rest of your content ... -->
+      </div>
+    </div>
+  <% } %>
+</li>
+
+
+
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+
+   

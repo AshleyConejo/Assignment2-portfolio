@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styles for the body, setting background color and text color */
+body {
+    background: #ffffff;
+    color: #937b76;
+}
+
+/* Styles for the header section */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Styles for the container class, adding left padding */
+.container {
+    padding-left: 10px;
+}
+
+/* Styles for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+/* Styles for the logo image */
+.logo {
+    width: 150px;
+}
+
+/* Styles for the logo container */
+.logo-container {
+    margin-right: 9px;
+}
+
+/* Styles for the navigation links */
+#header nav ul {
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #937b76;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+}
+
+/* Styles for the underline effect on navigation links */
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #3b312f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+   
+  }
+  
+  
+  
+  
+  .header-text {
+    text-align: center;
+  }
+  
+  
+  
+  
+  h1 {
+    font-size: 36px;
+    color: #937b76;
+    margin: 0;
+  }
+  
+  
+  
+  
+  p {
+    font-size: 18px;
+    color: #a5908c;
+  }
+
+  
+  .copyright {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #937b76;
+    font-weight: 300;
+   
+    color: #fafafa;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  #about {
+    padding: 80px 0;
+    color: #937b76;
+    font-size: 15px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Styles for column 1 in the About Me section */
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  
+  
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+  
+  
+  /* Styles for column 2 in the About Me section */
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+  
+  
+  /* Styles for sub-title in the About Me section */
+  .sub-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #5c5451;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Styles for tab titles in the About Me section */
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  
+  
+  .tab-links {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #937b76;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  
+  .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #393331;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  
+  
+  .tab-links.active-link::after {
+    width: 50%;
+  }
+  
+  
+  /* Styles for tab contents in the About Me section */
+  .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  
+  .tab-contents ul li span {
+    color: #393331;
+    font-size: 14px;
+  }
+  
+  
+  .tab-contents {
+    display: none;
+  }
+  
+  
+  .tab-contents.active-tab {
+    display: block;
+  }
+  
+  
+  /* Styles for the video container in the About Me section */
+  #video-container video {
+    width: 400px;
+    display: block;
+  }
+  
+  
+  /* Styles for the Projects section */
+  #Projects {
+    margin-top: 20px;
+  }
+  
+  
+  /* Styles for the project list in the Projects section */
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  
+  /* Styles for each project item in the Projects section */
+  .project-item {
+    flex: 0 0 calc(30% - 20px);
+    margin-bottom: 20px;
+    background-color: #cdc2bf;
+    padding: 20px;
+    border-radius: 10px;
+    color: #604f4f;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+  
+  
+  .project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  
+  /*------------Contact Me-------*/
+  
+  
+  /* Styles for the Contact Me section */
+  #contact {
+    padding: 80px 0;
+    color: #937b76;
+  }
+  
+  
+  /* Styles for the contact form */
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  
+  /* Styles for labels in the contact form */
+  #contact label {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #574e4c;
+  }
+  
+  
+  /* Styles for input fields and select in the contact form */
+  #contact input,
+  #contact select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #574e4c;
+    border-radius: 5px;
+  }
+  
+  
+  /* Styles for the submit button in the contact form */
+  #contact button {
+    background-color: #937b76;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  
+  #contact button:hover {
+    background-color: #574e4c;
+  }
+  
+ 
+  
